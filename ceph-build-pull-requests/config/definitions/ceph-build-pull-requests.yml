@@ -1,6 +1,6 @@
 - job:
     name: ceph-build-pull-requests
-    node: trusty
+    node: trusty && rebootable
     project-type: freestyle
     defaults: global
     concurrent: true
