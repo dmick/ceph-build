@@ -27,6 +27,7 @@ $SUDO yum install -y redhat-lsb-core
 cd dist
 tar xzf *.orig.tar.gz
 cd ceph-*
+DISTDIR=$(pwd)
 pwd
 
 BRANCH=`branch_slash_filter $BRANCH`
@@ -102,7 +103,7 @@ CentOS|Fedora|SUSE*|RedHatEnterpriseServer)
                 $SUDO yum install -y yum-utils
                 ;;
         esac
-        sed -e 's/@//g' < ceph.spec.in > $DIR/ceph.spec
+        sed -e 's/@//g' < $DISTDIR/ceph.spec.in > $DIR/ceph.spec
         $SUDO yum-builddep -y $DIR/ceph.spec
         ;;
 *)
