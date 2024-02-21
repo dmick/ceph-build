@@ -1,2 +1,2 @@
 ---
-- include: jenkins.yml tags=jenkins
+- import_tasks: jenkins.yml tags=jenkins
