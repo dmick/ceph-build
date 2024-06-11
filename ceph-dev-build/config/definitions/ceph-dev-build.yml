@@ -44,18 +44,10 @@
           type: label-expression
           name: AVAILABLE_DIST
           values:
-            - trusty
-            - xenial
-            - bionic
             - focal
             - jammy
-            - centos7
-            - centos8
             - centos9
             - jessie
-            - precise
-            - centos6
-            - leap15
             - windows
       - axis:
           type: dynamic

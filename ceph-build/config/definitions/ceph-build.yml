@@ -29,21 +29,14 @@
           type: label-expression
           name: AVAILABLE_DIST
           values:
-            - trusty
-            - xenial
-            - bionic
             - focal
             - jammy
-            - centos7
-            - centos8
             - centos9
             - jessie
             - stretch
             - buster
             - bullseye
             - bookworm
-            - precise
-            - centos6
       - axis:
           type: dynamic
           name: DIST

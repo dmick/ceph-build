@@ -42,7 +42,6 @@
           type: label-expression
           name: AVAILABLE_DIST
           values:
-            - centos8
             - centos9
       - axis:
           type: dynamic
