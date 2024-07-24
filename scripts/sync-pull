@@ -77,7 +77,8 @@ for el_version in 9; do
 done
 
 if [[ "$project" == "ceph" ]]; then
-  ssh signer@download.ceph.com "/home/signer/bin/get-tarballs.sh $release $sha1 $version"
+  scp bin/get-tarballs.sh signer@download.ceph.com:bin/get-tarballs.sh
+  ssh signer@download.ceph.com "bin/get-tarballs.sh $release $sha1 $version"
 fi
 
 if $need_rerun; then
